@@ -10,7 +10,11 @@ func isLeap(_ year: Int) -> Bool {
 
 class LeapYearTests: XCTestCase {
   func testEvenlyDivisibleBy4IsLeap() {
-    XCTAssertTrue(isLeap(2020))
+      let year = 2020 // Arrange - Prepare the inputs
+      
+      let leap = isLeap(year) // Act - Exercise the behavior under test
+      
+      XCTAssertTrue(leap) // Assert - Verify the output matches the expectation
   }
 
   func testEvenlyDivisibleBy100IsNotLeap() {
